@@ -1,0 +1,7 @@
+```javascript
+<div class="flex">
+  <div class="bg-red-500 p-4 w-1/2"></div>
+  <div class="bg-blue-500 p-4 w-1/2"></div>
+</div>
+```
+This code snippet uses Tailwind's `flex` utility class to create a flexbox container. However, if you inspect the rendered HTML, you might find that the two divs don't occupy equal widths despite using `w-1/2`. This is because `w-1/2` (which means 50% width) only works correctly when the parent container has a defined width. If the parent container (in this case, the flex container) doesn't have a specified width, the child elements will not automatically share the available space equally.
